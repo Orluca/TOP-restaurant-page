@@ -1,5 +1,9 @@
 /* GLOBALS */
 
+:root {
+  --color-bars: rgb(74, 74, 74);
+}
+
 *,
 *::before,
 *::after {
@@ -8,10 +12,22 @@
   padding: 0;
 }
 
-/* HEADER */
+html,
+body {
+  height: 100%;
+}
 
+/* PAGE LAYOUT */
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr 1fr;
+}
+
+/* HEADER */
 .header {
-  background-color: rgb(74, 74, 74);
+  background-color: var(--color-bars);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,4 +37,15 @@
 .navbar {
   display: flex;
   column-gap: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-bars);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.github-link {
+  color: white;
 }
