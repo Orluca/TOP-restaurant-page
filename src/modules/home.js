@@ -1,6 +1,6 @@
 function welcomeHeadline() {
   const headline = document.createElement("h2");
-  headline.textContent = "Welcome!";
+  headline.textContent = "Pizzeria Amalfi";
 
   return headline;
 }

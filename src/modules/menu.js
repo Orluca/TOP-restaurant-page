@@ -1,3 +1,30 @@
+class menuItem {
+  constructor(name, info, price) {
+    this.name = name;
+    this.info = info;
+    this.price = price;
+  }
+
+  createHTML() {
+    const menuItem = document.createElement("div");
+
+    const name = document.createElement("h3");
+    name.textContent = this.name;
+
+    const info = document.createElement("p");
+    info.textContent = this.info;
+
+    const price = document.createElement("p");
+    price.textContent = this.price;
+
+    menuItem.appendChild(name);
+    menuItem.appendChild(info);
+    menuItem.appendChild(price);
+
+    return menuItem;
+  }
+}
+
 function headline() {
   const headline = document.createElement("h2");
   headline.textContent = "Menu";
@@ -5,24 +32,22 @@ function headline() {
   return headline;
 }
 
-function menuItem01() {
-  const menuItem01 = document.createElement("p");
-  menuItem01.textContent = "Spaghetti Bolognese";
-  return menuItem01;
+function pizzaMagherita() {
+  const item = new menuItem("Pizza Magherita", "Tomatensoße, Käse", "7,00€");
+  return item.createHTML();
 }
 
-function menuItem02() {
-  const menuItem02 = document.createElement("p");
-  menuItem02.textContent = "Pizza Hawaii";
-  return menuItem02;
+function pizzaHawaii() {
+  const item = new menuItem("Pizza Hawaii", "Tomatensoße, Schinken, Ananas, Käse", "8,80€");
+  return item.createHTML();
 }
 
 function menu() {
   const menu = document.createElement("div");
 
   menu.appendChild(headline());
-  menu.appendChild(menuItem01());
-  menu.appendChild(menuItem02());
+  menu.appendChild(pizzaMagherita());
+  menu.appendChild(pizzaHawaii());
 
   return menu;
 }
