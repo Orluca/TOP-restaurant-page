@@ -1,8 +1,24 @@
 function welcomeHeadline() {
-  const headline = document.createElement("h2");
-  headline.textContent = "Pizzeria Amalfi";
+  const headlineContainer = document.createElement("div");
+  headlineContainer.classList.add("welcome-header");
 
-  return headline;
+  const headlinePart1 = document.createElement("h2");
+  headlinePart1.textContent = "Herzlich Willkommen";
+  headlinePart1.classList.add("welcome-header-pt1");
+
+  const headlinePart2 = document.createElement("h2");
+  headlinePart2.textContent = "bei der";
+  headlinePart2.classList.add("welcome-header-pt2");
+
+  const headlinePart3 = document.createElement("h2");
+  headlinePart3.textContent = "Pizzeria Amalfi";
+  headlinePart3.classList.add("welcome-header-pt3");
+
+  headlineContainer.appendChild(headlinePart1);
+  headlineContainer.appendChild(headlinePart2);
+  headlineContainer.appendChild(headlinePart3);
+
+  return headlineContainer;
 }
 
 function welcomeText() {
@@ -15,6 +31,7 @@ function welcomeText() {
 
 function home() {
   const home = document.createElement("div");
+  home.classList.add("home");
 
   home.appendChild(welcomeHeadline());
   home.appendChild(welcomeText());

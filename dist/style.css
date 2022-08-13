@@ -60,6 +60,32 @@ h2 {
 }
 
 /* HOME */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.welcome-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-header-pt1 {
+  font-size: 2.5rem;
+}
+
+.welcome-header-pt2 {
+  font-size: 1.5rem;
+}
+
+.welcome-header-pt3 {
+  font-size: 4rem;
+}
 
 /* MENU */
 .menu {
