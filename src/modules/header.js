@@ -22,7 +22,7 @@ function showContact() {
 
 function headline() {
   const headline = document.createElement("h1");
-  headline.textContent = "Restaurant Name";
+  headline.textContent = "Pizzeria Amalfi";
 
   return headline;
 }
