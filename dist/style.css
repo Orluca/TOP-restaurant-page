@@ -22,7 +22,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 7fr 1fr;
+  grid-template-rows: 2fr 12fr 0.5fr;
 }
 
 /* HEADER */
@@ -50,3 +50,5 @@ body {
 .github-link {
   color: white;
 }
+
+/* HOME */
