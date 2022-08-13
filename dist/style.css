@@ -25,6 +25,10 @@ body {
   grid-template-rows: 2fr 12fr 0.5fr;
 }
 
+.main {
+  background-color: rgb(164, 81, 81);
+}
+
 /* HEADER */
 .header {
   background-color: var(--color-bars);
